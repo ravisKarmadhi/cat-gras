@@ -1,0 +1,108 @@
+.card-hover {
+    img {
+        transform: scale(1);
+        transition: 0.3s all ease-in-out;
+    }
+
+    &:hover {
+        img {
+            transform: scale(1.1);
+        }
+    }
+}
+
+
+.single-product-card {
+    box-shadow: 0px 3px 36px #0000000B;
+    height: 368px;
+}
+
+.main-range-slider {
+    .pro-img {
+        transform: translateY(120px);
+        z-index:1;
+        height: 328px;
+        position: relative;
+    }
+
+    .single-range-card {
+        .inner-content {
+            padding: 150px 35px 30px 35px;
+
+            h5 {
+                opacity: 0.65;
+            }
+        }
+
+        &.primaryCard {
+            background-color: $lightPrimary;
+
+            h4 {
+                color: $primary;
+            }
+
+            h5 {
+                color: $primary;
+            }
+
+            a {
+                background-color: $primary;
+                color: $lightPrimary;
+            }
+        }
+
+        &.tomatoCard {
+            background-color: $tomato;
+
+            h4 {
+                color: $lightTomato;
+            }
+
+            h5 {
+                color: $lightTomato;
+            }
+
+            a {
+                background-color: $lightTomato;
+                color: $tomato;
+            }
+        }
+
+        &.orangeCard {
+            background-color: $orange;
+
+            h4 {
+                color: $lightOrange;
+            }
+
+            h5 {
+                color: $lightOrange;
+            }
+
+            a {
+                background-color: $lightOrange;
+                color: $orange;
+            }
+        }
+    }
+}
+
+
+.story-card{
+    .card-content{
+        padding:76px 110px 28px 47px;
+    }
+    .blog-img{
+        height:235px;
+    }
+}
+
+.page-setion-page{
+    .page-sec-img{
+        height: 459px;
+    }
+}
+
+.gyo-kit-slider-one{
+    border-right:1px solid rgba(112, 112, 112, 0.1);
+}

@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@font-face {
+    font-family: 'MADE-Mirage-Medium';
+    src: url('../fonts/MADE-Mirage-Medium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Vividly-Regular';
+    src: url('../fonts/Vividly-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+.made{
+    font-family: 'MADE-Mirage-Medium';
+}
+
+.vividly{
+    font-family: 'Vividly-Regular';
+}
+
+.poppins{
+    font-family: 'Poppins', sans-serif;
+}

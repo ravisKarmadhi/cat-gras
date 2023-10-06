@@ -1,0 +1,302 @@
+header {
+    z-index: 9;
+
+    .menu-links {
+        .row>* {
+            max-width: 14.28% !important;
+        }
+
+        .list-menulink {
+            margin-top: 45px;
+            padding-bottom: 45px;
+
+
+
+            &.hover-drop-down {
+                a{
+                    cursor: pointer;
+                }
+            }
+
+
+            &:hover {
+                .menu-sub-menu {
+                    display: block !important;
+                }
+            }
+
+            .menu-sub-menu {
+                padding: 20px 0 60px 0;
+                top: 120px;
+                z-index: 9;
+
+                .sub-menu-links {
+                    .sub-menu-link-img {
+                        background-color: #F8F8F8;
+                        height: 184px;
+
+                    }
+                }
+            }
+        }
+
+
+    }
+
+    .menu-btn {
+        margin-left: 36px;
+
+        button {
+            width: 41px;
+            height: 41px;
+
+            span {
+                width: 18px;
+                height: 18px;
+                line-height: 20px;
+                top: -5px;
+            }
+        }
+    }
+
+    &.transparent-header {
+        .white-logo {
+            display: block !important;
+        }
+
+        .menu-links {
+            li {
+                .main-menu-link {
+                    color: $white;
+                }
+            }
+        }
+
+        .menu-btn {
+            button {
+                background-color: rgba(255, 255, 255, 0.33);
+
+                svg {
+                    path {
+                        fill: $white;
+                    }
+                }
+
+                span {
+                    background-color: $primary;
+                    color: $lightPrimary;
+                }
+            }
+        }
+    }
+
+    &.primary-header {
+        .primary-logo {
+            display: block !important;
+        }
+
+        .menu-links {
+            li {
+                .main-menu-link {
+                    color: $primary;
+                }
+            }
+        }
+
+        .menu-btn {
+            button {
+                background-color: rgba(17, 64, 72, 0.08);
+
+                svg {
+                    path {
+                        fill: $primary;
+                    }
+                }
+
+                span {
+                    background-color: $primary;
+                    color: $lightPrimary;
+                }
+            }
+        }
+    }
+
+    &.tomato-header {
+        .tomato-logo {
+            display: block !important;
+        }
+
+        .menu-links {
+            li {
+                .main-menu-link {
+                    color: $tomato;
+                }
+            }
+        }
+
+        .menu-btn {
+            button {
+                background-color: rgba(220, 107, 80, 0.10);
+
+                svg {
+                    path {
+                        fill: $tomato;
+                    }
+                }
+
+                span {
+                    background-color: $tomato;
+                    color: $lightTomato;
+                }
+            }
+        }
+    }
+
+    &.orange-header {
+        .orange-logo {
+            display: block !important;
+        }
+
+        .menu-links {
+            li {
+                .main-menu-link {
+                    color: $orange;
+                }
+            }
+        }
+
+        .menu-btn {
+            button {
+                background-color: rgba(233, 145, 47, 0.10);
+
+                svg {
+                    path {
+                        fill: $orange;
+                    }
+                }
+
+                span {
+                    background-color: $orange;
+                    color: $lightOrange;
+                }
+            }
+        }
+    }
+
+    &.lightPrimary-header {
+        .lightPrimary-logo {
+            display: block !important;
+        }
+
+        .menu-links {
+            li {
+                .main-menu-link {
+                    color: $lightPrimary;
+                }
+            }
+        }
+
+        .menu-btn {
+            button {
+                background-color: rgba(210, 232, 223, 0.10);
+
+                svg {
+                    path {
+                        fill: $lightPrimary;
+                    }
+                }
+
+                span {
+                    background-color: $lightPrimary;
+                    color: $primary;
+                }
+            }
+        }
+    }
+
+    &.header-fixed {
+        background-color: $white !important;
+        box-shadow: 0px 3px 6px #00000010;
+        transition: all 0.3s ease-in-out;
+
+        &.transparent-header {
+            .primary-logo {
+                display: block !important;
+            }
+
+            .white-logo {
+                display: none !important;
+            }
+
+            .menu-links {
+                li {
+                    .main-menu-link {
+                        color: $primary !important;
+                    }
+                }
+            }
+
+            .menu-btn {
+                button {
+                    background-color: rgba(17, 64, 72, 0.08);
+
+                    svg {
+                        path {
+                            fill: $primary !important;
+                        }
+                    }
+
+                    span {
+                        background-color: $primary;
+                        color: $lightPrimary;
+                    }
+                }
+            }
+        }
+
+        &.lightPrimary-header {
+            .primary-logo {
+                display: block !important;
+            }
+
+            .lightPrimary-logo {
+                display: none !important;
+            }
+
+            .menu-links {
+                li {
+                    .main-menu-link {
+                        color: $primary !important;
+                    }
+                }
+            }
+
+            .menu-btn {
+                button {
+                    background-color: rgba(17, 64, 72, 0.08);
+
+                    svg {
+                        path {
+                            fill: $primary !important;
+                        }
+                    }
+
+                    span {
+                        background-color: $primary;
+                        color: $lightPrimary;
+                    }
+                }
+            }
+        }
+    }
+
+    &.hidden {
+        transform: translateY(-150%);
+        transition: all 0.3s ease-in-out;
+    }
+
+    &.header-fixed-os {
+        transform: translateY(0) !important;
+        transition: all 0.3s ease-in-out;
+    }
+}

@@ -1,0 +1,58 @@
+.why-cat-grass-sec{
+    padding-top:220px;
+    .inner-content{
+        padding-bottom:70px;  
+    }
+    .why-cat-grass-img{
+        height:600px;
+    }
+}
+
+.logo-sec-cat-grass{
+    padding-top:105px;
+    padding-bottom:105px;
+}
+
+.ready-grow-cat{
+    margin-top:78px;
+}
+
+.the-benefits-sec{
+padding-top:100px;
+padding-bottom:130px;
+    .the-benefits-card{
+        padding-top:86px;
+        padding-bottom:30px;
+    }
+}
+
+.filled-brochure-card{
+    .inner-card{
+        padding:115px 55px;
+        &.primary-card{
+            background-color:$primary;
+            h2, h5{
+                color:$lightPrimary;
+            }
+            a{
+                background-color:$lightPrimary;
+                color:$primary;
+            }
+        }
+        &.orange-card{
+            background-color:$orange;
+            h2, h5{
+                color:$lightOrange;
+            }
+            a{
+                background-color:$lightOrange;
+                color:$orange;
+            }
+        }
+    }
+}
+
+.filled-brochure-card{
+    padding-top:175px;
+    padding-bottom:200px;
+}

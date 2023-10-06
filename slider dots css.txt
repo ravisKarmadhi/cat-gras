@@ -1,0 +1,31 @@
+// slider dots css
+.custom-slider {
+    .slick-dots {
+        text-align: start;
+        bottom: 0px;
+        right: 50%;
+        transform: translate(50%, -0);
+        max-width: 1230px;
+        z-index: 1;
+        display:flex;
+        @include media-breakpoint-down(xxl) {
+            // margin-left: 24px;
+            // left: 0%;
+            // transform: translate(0%, -50%);
+            // max-width: 300px;
+        }
+
+        li {
+            margin: 0;
+            height: 1px;
+            width: 130px;
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+
+        .slick-active {
+            height: 2px;
+            background-color: $white !important;
+            margin-top: -1px;
+        }
+    }
+}

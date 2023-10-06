@@ -1,0 +1,61 @@
+.product-slider-home{
+    .slick-list{
+        margin:0 -8px;
+    }
+    .slick-slide{
+        padding:0 8px;
+    }
+}
+
+
+.slider-range{
+    .slick-list{
+        margin:0 -7.5px;
+        // overflow: visible;
+        
+        .slick-slide{
+            padding:0 7.5px;
+        }
+    }
+}
+
+.logo-slider{
+    .slick-list{
+        overflow: visible;
+    }
+}
+
+.blog-slider{
+    .slick-list{
+        margin:0 -6px;
+        overflow: visible;
+        .slick-slide{
+            padding:0 6px;
+        }
+    } 
+}
+
+.gyo-kit-slider{
+    .slick-list{
+        margin-left:-46px;
+        .slick-slide{
+            padding-left:46px;
+        }
+    }
+}
+
+
+.delivery-month-slider{
+    .slick-slide{
+        text-align: center;
+    }
+}
+
+.gallery-slider-custom{
+    .slick-list{
+        margin:0 -10px;
+        .slick-slide{
+            padding:0 10px;
+        }
+    } 
+}
