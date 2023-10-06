@@ -8,5 +8,139 @@ footer{
     }
     .footer-contact-details{
         padding-top:75px;
+        padding-bottom:170px;
+    }
+    .bg-icon-insta{
+        width: 34px;
+        height: 34px;
+    }
+    .footer-social{
+        height:67px;
+        margin-right:12px;
+        width:67px;
+        min-width:67px;
+    }
+    .contact-details{
+        .icon-contact{
+            width:60px;
+        }
+        a{
+            opacity:0.56;
+        }
+    }
+    .latest-offer-text{
+        opacity:0.36;
+    }
+    .input-row{
+        height:70px;
+        input{
+            padding-left:30px;
+            padding-right:100px;
+            font-weight:400 !important;
+            &::placeholder{
+                letter-spacing:-0.15px;
+                opacity:0.57;
+                color:$primary;
+            }
+        }
+    }
+    .footer-grass{
+        height:165px;
+    }
+    &.primary-footer{
+        .text{
+            color:$primary;
+        }
+        .bg-icon-insta{
+            background-color:rgba(17, 64, 72, 0.08);
+        }
+        .gallery-slider-custom-bg{
+            background: linear-gradient(to bottom, transparent 0%, transparent 50%, $lightPrimary 50%, $lightPrimary 100%);
+        }
+        .footer-contact-details{
+            background-color:$lightPrimary;
+        }
+        .footer-social{
+            background-color:rgba(17, 64, 72, 0.08);
+        }
+        .input-row{
+            input{
+                &::placeholder{
+                    color:$primary;
+                }
+            }
+        }
+        svg{
+            path{
+                fill:$primary;
+            }
+        }
+        .green-tail, .green-grass{
+            display:block !important;
+        }
+    }
+    &.orange-footer{
+        .text{
+            color:$orange;
+        }
+        .bg-icon-insta{
+            background-color:rgba(233, 145, 47, 0.08);
+        }
+        .gallery-slider-custom-bg{
+            background: linear-gradient(to bottom, transparent 0%, transparent 50%, $lightOrange 50%, $lightOrange 100%);
+        }
+        .footer-contact-details{
+            background-color:$lightOrange;
+        }
+        .footer-social{
+            background-color:rgba(233, 145, 47, 0.08);
+        }
+        .input-row{
+            input{
+                &::placeholder{
+                    color:$orange;
+                }
+            }
+        }
+        svg{
+            path{
+                fill:$orange;
+            }
+        }
+        .orange-tail, .orange-grass{
+            display:block !important;
+        }
+    }
+    &.tomato-footer{
+        .text{
+            color:$tomato;
+        }
+        .bg-icon-insta{
+            background-color:rgba(233, 145, 47, 0.08);
+        }
+        .gallery-slider-custom-bg{
+            background: linear-gradient(to bottom, transparent 0%, transparent 50%, $lightTomato 50%, $lightTomato 100%);
+        }
+        .footer-contact-details{
+            background-color:$lightTomato;
+        }
+        .footer-social{
+            background-color:rgba(233, 145, 47, 0.08);
+        }
+        .input-row{
+            input{
+                &::placeholder{
+                    color:$tomato;
+                }
+            }
+        }
+        svg{
+            path{
+                fill:$tomato;
+            }
+        }
+        .tomato-tail, .tomato-grass{
+            display:block !important;
+        }
     }
 }

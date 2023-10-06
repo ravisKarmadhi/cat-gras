@@ -15242,6 +15242,114 @@ footer .gallery-bg .gallery-slider-custom .gallery-img {
 }
 footer .footer-contact-details {
   padding-top: 75px;
+  padding-bottom: 170px;
+}
+footer .bg-icon-insta {
+  width: 34px;
+  height: 34px;
+}
+footer .footer-social {
+  height: 67px;
+  margin-right: 12px;
+  width: 67px;
+  min-width: 67px;
+}
+footer .contact-details .icon-contact {
+  width: 60px;
+}
+footer .contact-details a {
+  opacity: 0.56;
+}
+footer .latest-offer-text {
+  opacity: 0.36;
+}
+footer .input-row {
+  height: 70px;
+}
+footer .input-row input {
+  padding-left: 30px;
+  padding-right: 100px;
+  font-weight: 400 !important;
+}
+footer .input-row input::placeholder {
+  letter-spacing: -0.15px;
+  opacity: 0.57;
+  color: #114048;
+}
+footer .footer-grass {
+  height: 165px;
+}
+footer.primary-footer .text {
+  color: #114048;
+}
+footer.primary-footer .bg-icon-insta {
+  background-color: rgba(17, 64, 72, 0.08);
+}
+footer.primary-footer .gallery-slider-custom-bg {
+  background: linear-gradient(to bottom, transparent 0%, transparent 50%, #D2E8DF 50%, #D2E8DF 100%);
+}
+footer.primary-footer .footer-contact-details {
+  background-color: #D2E8DF;
+}
+footer.primary-footer .footer-social {
+  background-color: rgba(17, 64, 72, 0.08);
+}
+footer.primary-footer .input-row input::placeholder {
+  color: #114048;
+}
+footer.primary-footer svg path {
+  fill: #114048;
+}
+footer.primary-footer .green-tail, footer.primary-footer .green-grass {
+  display: block !important;
+}
+footer.orange-footer .text {
+  color: #E9912F;
+}
+footer.orange-footer .bg-icon-insta {
+  background-color: rgba(233, 145, 47, 0.08);
+}
+footer.orange-footer .gallery-slider-custom-bg {
+  background: linear-gradient(to bottom, transparent 0%, transparent 50%, #F9F8D8 50%, #F9F8D8 100%);
+}
+footer.orange-footer .footer-contact-details {
+  background-color: #F9F8D8;
+}
+footer.orange-footer .footer-social {
+  background-color: rgba(233, 145, 47, 0.08);
+}
+footer.orange-footer .input-row input::placeholder {
+  color: #E9912F;
+}
+footer.orange-footer svg path {
+  fill: #E9912F;
+}
+footer.orange-footer .orange-tail, footer.orange-footer .orange-grass {
+  display: block !important;
+}
+footer.tomato-footer .text {
+  color: #DC6B50;
+}
+footer.tomato-footer .bg-icon-insta {
+  background-color: rgba(233, 145, 47, 0.08);
+}
+footer.tomato-footer .gallery-slider-custom-bg {
+  background: linear-gradient(to bottom, transparent 0%, transparent 50%, #FAEAE7 50%, #FAEAE7 100%);
+}
+footer.tomato-footer .footer-contact-details {
+  background-color: #FAEAE7;
+}
+footer.tomato-footer .footer-social {
+  background-color: rgba(233, 145, 47, 0.08);
+}
+footer.tomato-footer .input-row input::placeholder {
+  color: #DC6B50;
+}
+footer.tomato-footer svg path {
+  fill: #DC6B50;
+}
+footer.tomato-footer .tomato-tail, footer.tomato-footer .tomato-grass {
+  display: block !important;
 }
 
 .home-hero-section {
