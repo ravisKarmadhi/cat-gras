@@ -1,6 +1,9 @@
 .product-slider-home{
     .slick-list{
         margin:0 -8px;
+        @include media-breakpoint-down(lg) {
+            overflow: visible;
+        }
     }
     .slick-slide{
         padding:0 8px;

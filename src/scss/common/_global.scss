@@ -70,7 +70,8 @@ textarea { resize: none; }
 // POSITION GLOBAL CSS
 .p-initial{
   @include media-breakpoint-down(lg) {
-  position:initial !important;
+    position:initial !important;
+    transform: translate(0) !important;
   }
 }
 .top-left-center{

@@ -116,6 +116,32 @@
     font-size:$fontMMM;
 }
 
+.resfontXM{
+    @include media-breakpoint-down(lg) {
+        font-size:$fontXM !important;
+    }
+}
+.resfontMML{
+    @include media-breakpoint-down(lg) {
+        font-size:$resfontMML !important; 
+    }
+}
+.resfontLL{
+    @include media-breakpoint-down(lg) {
+        font-size:$fontLL !important;
+    }
+}
+.resfontLLX{
+    @include media-breakpoint-down(lg) {
+        font-size:$resfontLLX !important;
+    }
+}
+.resfontM{
+    @include media-breakpoint-down(lg) {
+        font-size:$fontM !important;
+    }
+}
+
 // color
 
 .bgprimary{
@@ -158,6 +184,12 @@
    color:$lightOrange; 
 }
 
+.resTextPrimary{
+    @include media-breakpoint-down(lg) {
+        color:$primary !important;
+    }
+}
+
 // line height
 
 .leadingX{
@@ -181,7 +213,16 @@
 .leadingXM{
     line-height:$leadingXM;
 }
-
+.resleadingXL{
+    @include media-breakpoint-down(lg) {
+        line-height:$resleadingXL !important;
+    } 
+}
+.resleadingX{
+    @include media-breakpoint-down(lg) {
+        line-height:$leadingX !important;
+    } 
+}
 // Border Radius
 .primaryRadius{
     border-radius:$primaryRadius;
