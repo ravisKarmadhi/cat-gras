@@ -183,17 +183,45 @@ $(".burgur-menu").click( function () {
   $(".menu-btn").removeClass("d-none");
   $(".menu-btn").addClass("ms-0");
   $(".search-res-tab").removeClass("d-none");
+  $(".burgur-menu").addClass("d-none");
+  $(".burgur-close").removeClass("d-none");
   $(document).ready(function () {
     function updateClassNew() {
         var windowWidth = $(window).width();
         if (windowWidth >= 0 && windowWidth <= 1200) {
-            $('.lightPrimary-header').removeClass('lightPrimary-header').addClass('primary-header');
-
+            $('.lightPrimary-header').removeClass('lightPrimary-header').addClass('primary-header res-primary-header');
         }
     }
     updateClassNew();
     $(window).resize(function () {
         updateClassNew();
+    });
+  });
+});
+
+$(".burgur-close").click( function () {
+  $("header").removeClass("vh-100 overflow-y-auto bg-white");
+  $("html").removeClass("overflow-hidden");
+  $(".menu-links").addClass("d-none");
+  $(".menu-btn").addClass("d-none");
+  $(".menu-btn").removeClass("ms-0");
+  $(".search-res-tab").addClass("d-none");
+  $(".burgur-menu").removeClass("d-none");
+  $(".burgur-close").addClass("d-none");
+  $(".menu-sub-menu").addClass("d-none");
+  $(".main-menu-link").removeClass("d-none");
+  $(".menu-links").addClass("mb-4 pb-4");
+
+  $(document).ready(function () {
+    function updateClassRess() {
+        var windowWidth = $(window).width();
+        if (windowWidth >= 0 && windowWidth <= 1200) {
+            $('.res-primary-header').removeClass('primary-header').addClass('lightPrimary-header');
+        }
+    }
+    updateClassRess();
+    $(window).resize(function () {
+        updateClassRess();
     });
   });
 });
@@ -206,7 +234,9 @@ $("#open-res-menu").click( function () {
           $(".menu-sub-menu").removeClass("d-none");
           $("html").addClass("overflow-hidden");
           $(".menu-btn").addClass("d-none");
+          $(".search-res-tab").addClass("d-none");
           $(".main-menu-link").addClass("d-none");
+          $(".menu-links").removeClass("mb-4 pb-4");
         }
     }
     updateClassTwo();

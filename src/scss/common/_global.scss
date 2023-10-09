@@ -106,6 +106,7 @@ textarea { resize: none; }
 // SCROLLBAR AND SELECTION GLOBAL CSS
 ::-webkit-scrollbar {
   width: 5px;
+  display:none !important;
 }
 ::-webkit-scrollbar-thumb {
   background: #7e7e7e; 

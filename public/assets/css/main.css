@@ -14594,6 +14594,7 @@ textarea {
 
 ::-webkit-scrollbar {
   width: 5px;
+  display: none !important;
 }
 
 ::-webkit-scrollbar-thumb {

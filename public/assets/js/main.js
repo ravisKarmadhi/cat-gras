@@ -20818,16 +20818,43 @@ jquery_default()(".burgur-menu").click(function () {
   jquery_default()(".menu-btn").removeClass("d-none");
   jquery_default()(".menu-btn").addClass("ms-0");
   jquery_default()(".search-res-tab").removeClass("d-none");
+  jquery_default()(".burgur-menu").addClass("d-none");
+  jquery_default()(".burgur-close").removeClass("d-none");
   jquery_default()(document).ready(function () {
     function updateClassNew() {
       var windowWidth = jquery_default()(window).width();
       if (windowWidth >= 0 && windowWidth <= 1200) {
-        jquery_default()('.lightPrimary-header').removeClass('lightPrimary-header').addClass('primary-header');
+        jquery_default()('.lightPrimary-header').removeClass('lightPrimary-header').addClass('primary-header res-primary-header');
       }
     }
     updateClassNew();
     jquery_default()(window).resize(function () {
       updateClassNew();
+    });
+  });
+});
+jquery_default()(".burgur-close").click(function () {
+  jquery_default()("header").removeClass("vh-100 overflow-y-auto bg-white");
+  jquery_default()("html").removeClass("overflow-hidden");
+  jquery_default()(".menu-links").addClass("d-none");
+  jquery_default()(".menu-btn").addClass("d-none");
+  jquery_default()(".menu-btn").removeClass("ms-0");
+  jquery_default()(".search-res-tab").addClass("d-none");
+  jquery_default()(".burgur-menu").removeClass("d-none");
+  jquery_default()(".burgur-close").addClass("d-none");
+  jquery_default()(".menu-sub-menu").addClass("d-none");
+  jquery_default()(".main-menu-link").removeClass("d-none");
+  jquery_default()(".menu-links").addClass("mb-4 pb-4");
+  jquery_default()(document).ready(function () {
+    function updateClassRess() {
+      var windowWidth = jquery_default()(window).width();
+      if (windowWidth >= 0 && windowWidth <= 1200) {
+        jquery_default()('.res-primary-header').removeClass('primary-header').addClass('lightPrimary-header');
+      }
+    }
+    updateClassRess();
+    jquery_default()(window).resize(function () {
+      updateClassRess();
     });
   });
 });
@@ -20839,7 +20866,9 @@ jquery_default()("#open-res-menu").click(function () {
         jquery_default()(".menu-sub-menu").removeClass("d-none");
         jquery_default()("html").addClass("overflow-hidden");
         jquery_default()(".menu-btn").addClass("d-none");
+        jquery_default()(".search-res-tab").addClass("d-none");
         jquery_default()(".main-menu-link").addClass("d-none");
+        jquery_default()(".menu-links").removeClass("mb-4 pb-4");
       }
     }
     updateClassTwo();
