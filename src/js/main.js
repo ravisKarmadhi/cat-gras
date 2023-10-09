@@ -81,48 +81,137 @@ $(document).ready(function () {
 // });
 
 $(document).ready(function () {
-  if ($('header').hasClass('transparent-header')) {
-    $(".hover-drop-down").on("mouseenter", function () {
-      $("header").addClass("primary-header bg-white");
-      $("header").removeClass("transparent-header");
+
+  $(document).ready(function () {
+    function updateClassThree() {
+        var windowWidth = $(window).width();
+        if (windowWidth >= 1200) {
+          if ($('header').hasClass('transparent-header')) {
+            $(".hover-drop-down").on("mouseenter", function () {
+              $("header").addClass("primary-header bg-white");
+              $("header").removeClass("transparent-header");
+            });
+            $(".hover-drop-down").on("mouseleave", function () {
+              $("header").removeClass("primary-header bg-white");
+              $("header").addClass("transparent-header");
+            });
+          }
+          else if ($('header').hasClass('lightPrimary-header')) {
+            $(".hover-drop-down").on("mouseenter", function () {
+              $("header").addClass("primary-header bg-white");
+              $("header").removeClass("lightPrimary-header");
+            });
+            $(".hover-drop-down").on("mouseleave", function () {
+              $("header").removeClass("primary-header bg-white");
+              $("header").addClass("lightPrimary-header");
+            });
+          }
+          else if ($('header').hasClass('tomato-header')) {
+            $(".hover-drop-down").on("mouseenter", function () {
+              $("header").addClass("bg-white");
+            });
+            $(".hover-drop-down").on("mouseleave", function () {
+              $("header").removeClass("bg-white");
+            });
+          }
+          else if ($('header').hasClass('orange-header')) {
+            $(".hover-drop-down").on("mouseenter", function () {
+              $("header").addClass("bg-white");
+            });
+            $(".hover-drop-down").on("mouseleave", function () {
+              $("header").removeClass("bg-white");
+            });
+          }
+          else {
+            $(".hover-drop-down").on("mouseenter", function () {
+              $("header").addClass("bg-white");
+            });
+            $(".hover-drop-down").on("mouseleave", function () {
+              $("header").removeClass("bg-white");
+            });
+          }
+        }
+    }
+    updateClassThree();
+    $(window).resize(function () {
+        updateClassThree();
     });
-    $(".hover-drop-down").on("mouseleave", function () {
-      $("header").removeClass("primary-header bg-white");
-      $("header").addClass("transparent-header");
-    });
+  });
+
+
+});
+
+
+$("#open-search-box").click( function () {
+  $(".menu-links").addClass("d-none");
+  $(".menu-links").removeClass("d-xl-flex");
+  $(".menu-btn").addClass("d-none");
+  $(".menu-btn").removeClass("d-xl-flex");
+  $(".custom-search-box").removeClass("d-none");
+  $("header").addClass("custom-padding");
+  $("#add-position").addClass("position-relative");
+});
+
+
+$("#close-custom-search").click( function () {
+  $(".menu-links").removeClass("d-none");
+  $(".menu-links").addClass("d-xl-flex");
+  $(".menu-btn").removeClass("d-none");
+  $(".menu-btn").addClass("d-xl-flex");
+  $(".custom-search-box").addClass("d-none");
+  $("header").removeClass("custom-padding");
+  $("#add-position").removeClass("position-relative");
+});
+
+$(document).ready(function () {
+  function updateClass() {
+      var windowWidth = $(window).width();
+      if (windowWidth >= 0 && windowWidth <= 1200) {
+          $('.transparent-header').removeClass('transparent-header').addClass('primary-header');
+      }
   }
-  else if ($('header').hasClass('lightPrimary-header')) {
-    $(".hover-drop-down").on("mouseenter", function () {
-      $("header").addClass("primary-header bg-white");
-      $("header").removeClass("lightPrimary-header");
+  updateClass();
+  $(window).resize(function () {
+      updateClass();
+  });
+});
+
+$(".burgur-menu").click( function () {
+  $("header").addClass("vh-100 overflow-y-auto bg-white");
+  $("html").addClass("overflow-hidden");
+  $(".menu-links").removeClass("d-none");
+  $(".menu-btn").removeClass("d-none");
+  $(".menu-btn").addClass("ms-0");
+  $(".search-res-tab").removeClass("d-none");
+  $(document).ready(function () {
+    function updateClassNew() {
+        var windowWidth = $(window).width();
+        if (windowWidth >= 0 && windowWidth <= 1200) {
+            $('.lightPrimary-header').removeClass('lightPrimary-header').addClass('primary-header');
+
+        }
+    }
+    updateClassNew();
+    $(window).resize(function () {
+        updateClassNew();
     });
-    $(".hover-drop-down").on("mouseleave", function () {
-      $("header").removeClass("primary-header bg-white");
-      $("header").addClass("lightPrimary-header");
+  });
+});
+
+$("#open-res-menu").click( function () {
+  $(document).ready(function () {
+    function updateClassTwo() {
+        var windowWidth = $(window).width();
+        if (windowWidth >= 0 && windowWidth <= 1200) {
+          $(".menu-sub-menu").removeClass("d-none");
+          $("html").addClass("overflow-hidden");
+          $(".menu-btn").addClass("d-none");
+          $(".main-menu-link").addClass("d-none");
+        }
+    }
+    updateClassTwo();
+    $(window).resize(function () {
+        updateClassTwo();
     });
-  }
-  else if ($('header').hasClass('tomato-header')) {
-    $(".hover-drop-down").on("mouseenter", function () {
-      $("header").addClass("bg-white");
-    });
-    $(".hover-drop-down").on("mouseleave", function () {
-      $("header").removeClass("bg-white");
-    });
-  }
-  else if ($('header').hasClass('orange-header')) {
-    $(".hover-drop-down").on("mouseenter", function () {
-      $("header").addClass("bg-white");
-    });
-    $(".hover-drop-down").on("mouseleave", function () {
-      $("header").removeClass("bg-white");
-    });
-  }
-  else {
-    $(".hover-drop-down").on("mouseenter", function () {
-      $("header").addClass("bg-white");
-    });
-    $(".hover-drop-down").on("mouseleave", function () {
-      $("header").removeClass("bg-white");
-    });
-  }
+  });
 });

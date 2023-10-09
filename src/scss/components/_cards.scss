@@ -20,9 +20,14 @@
 .main-range-slider {
     .pro-img {
         transform: translateY(120px);
-        z-index:1;
+        z-index: 1;
         height: 328px;
         position: relative;
+
+        @include media-breakpoint-down(lg) {
+            transform: translateY(85px);
+            height: 250px;
+        }
     }
 
     .single-range-card {
@@ -88,21 +93,28 @@
 }
 
 
-.story-card{
-    .card-content{
-        padding:76px 110px 28px 47px;
+.story-card {
+    .card-content {
+        padding: 76px 110px 28px 47px;
+        @include media-breakpoint-down(lg) {
+            padding:50px 32px 16px;
+        }
     }
-    .blog-img{
-        height:235px;
+
+    .blog-img {
+        height: 235px;
     }
 }
 
-.page-setion-page{
-    .page-sec-img{
+.page-setion-page {
+    .page-sec-img {
         height: 459px;
+        @include media-breakpoint-down(lg) {
+            height:250px;
+        }
     }
 }
 
-.gyo-kit-slider-one{
-    border-right:1px solid rgba(112, 112, 112, 0.1);
+.gyo-kit-slider-one {
+    border-right: 1px solid rgba(112, 112, 112, 0.1);
 }

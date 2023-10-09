@@ -1,68 +1,104 @@
-.hero-own-cat-grass{
-    padding-top:220px;
+.hero-own-cat-grass {
+    padding-top: 220px;
 
-    .grow-cat-grass-img{
+    .grow-cat-grass-img {
         height: 601px;
-        margin-top:85px;
+        margin-top: 85px;
+
+        @include media-breakpoint-down(lg) {
+            height: 370px;
+            margin-top: 75px;
+        }
     }
 }
 
-.cat-kit-sec{
-    .cat-grass-kit-sec{
-        border-radius:55px;
-        padding:90px 0 42px 0;
-        margin-top:80px;
+.cat-kit-sec {
+    .cat-grass-kit-sec {
+        border-radius: 55px;
+        padding: 90px 0 42px 0;
+        margin-top: 80px;
+
+        @include media-breakpoint-down(lg) {
+            margin-top: 70px;
+            border-radius: 35px;
+            padding: 65px 27px 28px 27px;
+        }
     }
 }
 
 
-.gyo-cat-grass-sec{
-    padding-top:95px;
-    .product-image{
-        height:160px;
+.gyo-cat-grass-sec {
+    padding-top: 95px;
+
+    .product-image {
+        height: 160px;
     }
 }
 
-.subscrption-box-sec{
-    padding-top:200px;
-    .subscrption-box{
-        padding-top:100px;
-        padding-bottom:80px;
-        ul{
-            li{
-                margin-bottom:42px;
+.subscrption-box-sec {
+    padding-top: 200px;
+
+    @include media-breakpoint-down(lg) {
+        padding-top: 95px;
+    }
+
+    .subscrption-box {
+        padding-top: 100px;
+        padding-bottom: 80px;
+
+        @include media-breakpoint-down(lg) {
+            padding: 65px 27px 8px;
+            border-radius:35px;
+        }
+
+        ul {
+            li {
+                margin-bottom: 42px;
             }
         }
     }
 }
 
-.kits-delivery-month-sec{
-    padding-top:115px;
-    .pro-img{
-        height:242px;
+.kits-delivery-month-sec {
+    padding-top: 115px;
+
+    .pro-img {
+        height: 242px;
     }
 }
 
-.cat-grass-seeds-sec{
-    padding-top:195px;
-    .cat-grass-seeds-card{
-        padding-top:105px;
-        padding-bottom:75px;
-        .seed-pack-img{
+.cat-grass-seeds-sec {
+    padding-top: 195px;
+    @include media-breakpoint-down(lg) {
+        padding-top:100px;
+    }
+    .cat-grass-seeds-card {
+        padding-top: 105px;
+        padding-bottom: 75px;
+        @include media-breakpoint-down(lg) {
+            padding-top:90px;
+            padding-bottom: 45px;
+        }
+        .seed-pack-img {
             height: 221px;
         }
     }
 }
 
-.grass-station-section{
-    height:534px;
-    margin-top:220px;
-    .layer{
-        opacity:0.07;
+.grass-station-section {
+    height: 534px;
+    margin-top: 220px;
+    @include media-breakpoint-down(lg) {
+        margin-top:80px;
+        height: 395px;
+    }
+    .layer {
+        opacity: 0.07;
     }
 }
 
-.my-cat-grass-stations{
-    padding-top:100px;
-    padding-bottom:175px;
+.my-cat-grass-stations {
+    padding-top: 100px;
+    padding-bottom: 175px;
+    
 }

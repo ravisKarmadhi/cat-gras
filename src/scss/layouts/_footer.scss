@@ -3,12 +3,23 @@ footer{
         .gallery-slider-custom{
             .gallery-img{
                 height:201px;
+                @include media-breakpoint-down(lg) {
+                height:123px;
+                }
             }
+        }
+    }
+    .footer-menu{
+        margin-left:-25px;
+        li{
+            padding-left:25px;
         }
     }
     .footer-contact-details{
         padding-top:75px;
         padding-bottom:170px;
+        @include media-breakpoint-down(lg) {
+        }
     }
     .bg-icon-insta{
         width: 34px;

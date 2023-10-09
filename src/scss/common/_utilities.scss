@@ -141,7 +141,36 @@
         font-size:$fontM !important;
     }
 }
-
+.resfontXXS{
+    @include media-breakpoint-down(lg) {
+        font-size:$fontXXS !important;
+    }
+}
+.resfontML{
+    @include media-breakpoint-down(lg) {
+        font-size:$fontML !important;
+    }
+}
+.resfontSSS{
+    @include media-breakpoint-down(lg) {
+        font-size:$fontSSS !important;
+    }
+}
+.resfontXXX{
+    @include media-breakpoint-down(lg) {
+        font-size:$fontXXX !important;
+    }
+}
+.resfontLLS{
+    @include media-breakpoint-down(lg) {
+        font-size:$resfontLLS !important;
+    } 
+}
+.resfontSSM{
+    @include media-breakpoint-down(lg) {
+        font-size:$fontSSM !important;
+    } 
+}
 // color
 
 .bgprimary{
@@ -185,7 +214,7 @@
 }
 
 .resTextPrimary{
-    @include media-breakpoint-down(lg) {
+    @include media-breakpoint-down(xl) {
         color:$primary !important;
     }
 }
@@ -223,6 +252,17 @@
         line-height:$leadingX !important;
     } 
 }
+.resleadingSX{
+    @include media-breakpoint-down(lg) {
+        line-height:$resleadingSX !important;
+    } 
+}
+.resleadingXX{
+    @include media-breakpoint-down(lg) {
+        line-height:$leadingXX !important;
+    } 
+}
+
 // Border Radius
 .primaryRadius{
     border-radius:$primaryRadius;
@@ -238,6 +278,11 @@
 }
 .largeRadius{
     border-radius:$largeRadius;
+}
+.resprimaryRadius{
+    @include media-breakpoint-down(lg) {
+        border-radius:$resprimaryRadius !important;
+    }
 }
 // Letter Spacing
 

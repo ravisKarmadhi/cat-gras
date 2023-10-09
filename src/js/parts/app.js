@@ -33,7 +33,21 @@ export class App {
       infinite: false,
       slidesToShow: 3,
       slidesToScroll:1,
-      arrows:false
+      arrows:false,
+      responsive: [
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 2,
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1,
+          }
+        }
+      ]
     });
 
 
@@ -45,6 +59,26 @@ export class App {
       autoplay: true,
       autoplaySpeed: 2000,
       slidesToShow: 4,
+      responsive: [
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 3,
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 2,
+          }
+        },
+        {
+          breakpoint: 575,
+          settings: {
+            slidesToShow: 1,
+          }
+        }
+      ]
     });
     $('.blog-slider').slick({
       infinite: true,
@@ -56,6 +90,20 @@ export class App {
       slidesToShow: 3,
       prevArrow: $(".blog-section .slick--prev"),
       nextArrow: $(".blog-section .slick--next"),
+      responsive: [
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 2,
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1,
+          }
+        }
+      ]
     });
     $('.gyo-kit-slider').slick({
       infinite: true,
@@ -65,6 +113,26 @@ export class App {
       autoplay: true,
       autoplaySpeed: 2000,
       slidesToShow: 4,
+      responsive: [
+        {
+          breakpoint: 1400,
+          settings: {
+            slidesToShow: 3,
+          }
+        },
+        {
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 2,
+          }
+        },
+        {
+          breakpoint: 575,
+          settings: {
+            slidesToShow: 1,
+          }
+        }
+      ]
     });
     $('.delivery-month-slider').slick({
       infinite: true,
@@ -74,6 +142,20 @@ export class App {
       autoplay: true,
       autoplaySpeed: 2000,
       slidesToShow: 3,
+      responsive: [
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 2,
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1,
+          }
+        }
+      ]
     });
     $('.seeds-slider').slick({
       infinite: true,
@@ -83,6 +165,26 @@ export class App {
       autoplay: true,
       autoplaySpeed: 2000,
       slidesToShow: 4,
+      responsive: [
+        {
+          breakpoint: 1400,
+          settings: {
+            slidesToShow: 3,
+          }
+        },
+        {
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 2,
+          }
+        },
+        {
+          breakpoint: 575,
+          settings: {
+            slidesToShow: 1,
+          }
+        }
+      ]
     });
     $('.gallery-slider-custom').slick({
       infinite: true,
@@ -92,6 +194,26 @@ export class App {
       autoplay: true,
       autoplaySpeed: 2000,
       slidesToShow: 6,
+      responsive: [
+        {
+          breakpoint: 1400,
+          settings: {
+            slidesToShow: 5,
+          }
+        },
+        {
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 4,
+          }
+        },
+        {
+          breakpoint: 575,
+          settings: {
+            slidesToShow: 3,
+          }
+        }
+      ]
     });
   }
   slickSLider() { }

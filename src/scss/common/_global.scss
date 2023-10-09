@@ -74,6 +74,12 @@ textarea { resize: none; }
     transform: translate(0) !important;
   }
 }
+.p-initial-xl{
+  @include media-breakpoint-down(xl) {
+    position:initial !important;
+    transform: translate(0) !important;
+  }
+}
 .top-left-center{
   top: 50%;
   left:50%;
@@ -86,6 +92,16 @@ textarea { resize: none; }
 .left-center {
   left: 50%;
   transform: translateX(-50%);
+}
+.res-w-100{
+  @include media-breakpoint-down(lg) {
+    width:100% !important;
+  }
+}
+.res-radius-0{
+  @include media-breakpoint-down(lg) {
+    border-radius: 0 !important;
+  }
 }
 // SCROLLBAR AND SELECTION GLOBAL CSS
 ::-webkit-scrollbar {

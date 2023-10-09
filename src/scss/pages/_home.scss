@@ -1,7 +1,7 @@
 .home-hero-section {
     height: 810px;
 
-    @include media-breakpoint-down(lg) {
+    @include media-breakpoint-down(xl) {
         height: auto;
         display: flex;
         flex-direction: column-reverse;
@@ -19,7 +19,7 @@
     .inner-content {
         margin-top: 165px;
 
-        @include media-breakpoint-down(lg) {
+        @include media-breakpoint-down(xl) {
             margin-top: 210px;
             padding-bottom:40px;
 
@@ -40,7 +40,16 @@
     padding-top: 105px;
     @include media-breakpoint-down(lg) {
         padding-top:70px;
+        .rotate-res-layer{
+            // transform: rotate();
+        }
     }
+}
+
+.what-we-do-sec{
+    @include media-breakpoint-down(lg) {
+        padding-top:120px;
+    }  
 }
 
 .brochures-sec {
@@ -67,45 +76,77 @@
 
 .product-range {
     padding-top: 40px;
-
+    @include media-breakpoint-down(lg) {
+        padding-top:145px;
+    }
     .rotate-title {
         width: fit-content;
         padding-bottom: 50px;
         padding-left: 60px;
-
+        @include media-breakpoint-down(lg) {
+            padding-bottom:0;
+            padding-left:0;
+        }
         h3 {
             padding-right: 50%;
             width: max-content;
+            @include media-breakpoint-down(xl) {
+            padding-right: 80%;
+                @include media-breakpoint-down(lg) {
+                    padding-right:0;
+                    transform: rotate(0);
+                }
+            }
         }
     }
 }
 
 .customers-review-sec {
     padding-top: 300px;
-
+    @include media-breakpoint-down(lg) {
+        padding-top:145px;
+    }
     .tail-img {
         bottom: -150px !important;
         left: -10px !important;
+    @include media-breakpoint-down(lg) {
+        bottom: auto;
+        top:270px;
+        transform: rotate(45deg);
+    }
     }
 }
 
 
 .why-choose-us-sec {
     margin-top: 280px;
+    @include media-breakpoint-down(lg) {
+        margin-top:105px;
+    }
 }
 
 .logo-sec-home {
     padding-top: 285px;
     padding-bottom: 180px;
+    @include media-breakpoint-down(lg) {
+        padding-top:85px;
+        padding-bottom:135px;
+    }
 }
 
 .blog-section-home-page {
     padding-top: 180px;
+    @include media-breakpoint-down(lg) {
+        padding-top:80px;
+    }
 }
 
 .submit-story-sec {
     padding-top: 150px;
     padding-bottom: 125px;
+    @include media-breakpoint-down(lg) {
+        padding-bottom:75px;
+    }
 }
 
 .page-setion-page-home {

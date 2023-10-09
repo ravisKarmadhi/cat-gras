@@ -53,6 +53,20 @@
   }
 }
 
+.px-p-8 {
+  @include media-breakpoint-down(lg) {
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+  }
+}
+
+.mx-m-0 {
+  @include media-breakpoint-down(lg) {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+}
+
 
 .px-p-p {
   @include media-breakpoint-down(lg) {
